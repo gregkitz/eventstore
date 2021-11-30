@@ -9,7 +9,7 @@ import grpc
 from event_store_pb2 import PublishRequest, SubscribeRequest, UnsubscribeRequest, GetRequest
 from event_store_pb2_grpc import EventStoreStub
 
-EVENT_STORE_HOSTNAME = os.getenv('EVENT_STORE_HOSTNAME', 'redis')
+EVENT_STORE_HOSTNAME = os.getenv('EVENT_STORE_HOSTNAME', 'localhost')
 EVENT_STORE_PORTNR = os.getenv('EVENT_STORE_PORTNR', '50051')
 
 
