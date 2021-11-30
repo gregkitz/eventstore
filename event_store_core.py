@@ -16,7 +16,7 @@ class EventStore(object):
         :param host: The Redis host.
         :param port: The Redis port.
         """
-        self.redis = redis.StrictRedis(decode_responses=True, host=host, port=port)
+        self.redis = redis.StrictRedis().from_url('rediss://default:6EkZSa20Axya9EUt@db-redis-nyc3-17336-do-user-9096713-0.b.db.ondigitalocean.com:25061')
 
     def add(self, _topic, _info):
         """
